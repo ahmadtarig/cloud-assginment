@@ -43,4 +43,8 @@ frequency = {}
 for word in data:
     frequency[word] = frequency.get(word, 0) + 1
 
+# print a dict
+for word, frequencyCount in frequency.items():
+    print(f"word: {word} , frequency: {frequencyCount}")
+
 file.close()  # close a file
